@@ -47,7 +47,7 @@ header {
 
 #topline {
 	padding: 20px 50px 20px 50px;
-	margin: 50px 50px -60px 50px;
+	margin: 50px 55px -60px 55px;
 }
 
 h1, h2 {
@@ -55,10 +55,10 @@ h1, h2 {
 	color: #ffffff;
 }
 
-h1 {
+#title {
 	float: left;
 }
 
-h2 {
+#author {
 	float: right;
 }
