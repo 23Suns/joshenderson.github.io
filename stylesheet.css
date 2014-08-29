@@ -1,5 +1,6 @@
 html {
-	background-image: url('http://i.imgur.com/7krmfuT.png');
+	background-image: url('http://i.imgur.com/B5fYDkO.jpg');
+	background-position: center; 
 	background-repeat: no-repeat;
 }
 
@@ -37,7 +38,8 @@ header {
 }
 
 .content p {
-	font-weight: normal;
+	font-weight: 100;
+	font-size: 15px;
 	text-align: justify;
 	position: absolute;
 }
