@@ -1,8 +1,9 @@
 html {
-	background-image: url('http://i.imgur.com/7krmfuT.png');
+	background-image: url('http://emblemsbf.com/img/26537.jpg');
 	background-position: center; 
+	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-color: #2C3034;
+	background-color: #141414;
 }
 
 body {
@@ -12,20 +13,27 @@ body {
 header {
 	font-size: 2em;
 	color: #ffffff;
-	background-color: #020202;
+	background-color: rgb(142, 142, 142, 0.6);
 	text-transform: uppercase;
-	text-indent: 45px;
+	text-indent: 30px;
 	margin: -10px;
-	padding-bottom: 20px;
-	padding-top: 20px;
-	border: 1px solid white;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border: 1px solid #bfbfbf;
+}
+
+span {
+	
 }
 
 #bottomline {
-	background-color: #020202;
+	background-color: rgb(142, 142, 142, 0.6);
+	color: #fff;
 	opacity: 0.6;
 	padding: 20px 50px 20px 50px;
 	margin: 100px 100px 0px 100px;
+	border: 1px solid #bfbfbf;
+	text-align: justify;
 }
 
 .content {
@@ -43,7 +51,6 @@ header {
 #date {
 	color: #ffffff;
 	text-align: left;
-	font-size: 15px;
 }
 
 #topline {
