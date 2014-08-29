@@ -20,6 +20,7 @@ header {
 	padding-bottom: 10px;
 	padding-top: 10px;
 	border: 1px solid #bfbfbf;
+	border-radius
 }
 
 #bottomline {
@@ -30,6 +31,7 @@ header {
 	margin: 100px 100px 0px 100px;
 	border: 1px solid #bfbfbf;
 	text-align: justify;
+	border-radius: 10px
 }
 
 .content {
