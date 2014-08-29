@@ -2,7 +2,6 @@ html {
 	background-image: url('http://i.imgur.com/7krmfuT.png');
 	background-position: center; 
 	background-repeat: no-repeat;
-	background-color: #020202
 }
 
 body {
@@ -48,12 +47,10 @@ header {
 }
 
 h1 {
-	float:left;
-	position: relative;
 	text-transform: uppercase;
 }
 
 h2 {
-	float:right;
-	position: relative;
+	text-transform: uppercase;
+	padding-top: -10px;
 }
