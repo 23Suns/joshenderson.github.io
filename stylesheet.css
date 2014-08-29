@@ -2,6 +2,7 @@ html {
 	background-image: url('http://i.imgur.com/7krmfuT.png');
 	background-position: center; 
 	background-repeat: no-repeat;
+	background-color: #2C3034;
 }
 
 body {
@@ -15,11 +16,8 @@ header {
 	text-transform: uppercase;
 	text-indent: 10px;
 	margin: -10px;
-}
-
-#topline {
-	padding: 100px 100px 100px 100px;
-	margin: 100px;
+	padding-bottom: 30px;
+	padding-top: 30px;
 }
 
 #bottomline {
@@ -41,7 +39,7 @@ header {
 	position: absolute;
 }
 
-#author {
+#date {
 	color: #ffffff;
 	text-align: right;
 }
