@@ -4,13 +4,24 @@ html {
 }
 
 body {
-	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+	font-size: 2em;
+	color: #ffffff;
+	background-color: #020202;
+	opacity: 0.6;
+	text-transform: uppercase;
+	text-indent: 10px;
+	margin: -10px;
 }
 
 #topline {
 	background-color: #020202;
 	opacity: 0.6;
-	padding: 20px 50px 20px 50px;
+	padding: 100px 100px 100px 100px;
+	margin: 100px;
 }
 
 #bottomline {
@@ -18,15 +29,6 @@ body {
 	opacity: 0.6;
 	padding: 20px 50px 20px 50px;
 	margin: 100px 100px 0px 100px;
-}
-
-header {
-	font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
-	font-size: 3em;
-	text-align: center;
-	color: #ffffff;
-	background-color: #020202;
-	opacity: 0.6;
 }
 
 .content {
@@ -42,8 +44,10 @@ header {
 
 h1 {
 	float:left;
+	position: relative;
 }
 
 h2 {
 	float:right;
+	position: relative;
 }
