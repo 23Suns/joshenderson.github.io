@@ -44,6 +44,11 @@ header {
 	position: absolute;
 }
 
+#author {
+	color: #ffffff;
+	text-align: right;
+}
+
 h1 {
 	float:left;
 	position: relative;
