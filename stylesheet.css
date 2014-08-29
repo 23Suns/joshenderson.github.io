@@ -12,8 +12,8 @@ body {
 
 header {
 	font-size: 2em;
-	color: #ffffff;
-	background-color: rgb(142, 142, 142, 0.6);
+	color: #E9930D;
+	background-color: #8e8e8e;
 	text-transform: uppercase;
 	text-indent: 30px;
 	margin: -10px;
@@ -22,13 +22,9 @@ header {
 	border: 1px solid #bfbfbf;
 }
 
-span {
-	
-}
-
 #bottomline {
-	background-color: rgb(142, 142, 142, 0.6);
-	color: #fff;
+	background-color: rgb(142, 142, 142);
+	color: #000000;
 	opacity: 0.6;
 	padding: 20px 50px 20px 50px;
 	margin: 100px 100px 0px 100px;
@@ -37,7 +33,7 @@ span {
 }
 
 .content {
-	color: #ffffff;
+	color: ##E9930D;
 	font-weight: bold;
 }
 
@@ -60,7 +56,8 @@ span {
 
 h1, h2 {
 	text-transform: uppercase;
-	color: #ffffff;
+	color: #E9930D;
+	font-size: 25px
 }
 
 #title {
@@ -69,6 +66,4 @@ h1, h2 {
 
 #author {
 	float: right;
-	font-size: 2;
-	padding-bottom: 
 }
