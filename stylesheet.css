@@ -2,6 +2,7 @@ html {
 	background-image: url('http://i.imgur.com/7krmfuT.png');
 	background-position: center; 
 	background-repeat: no-repeat;
+	background-color: #020202
 }
 
 body {
@@ -12,15 +13,12 @@ header {
 	font-size: 2em;
 	color: #ffffff;
 	background-color: #020202;
-	opacity: 0.6;
 	text-transform: uppercase;
 	text-indent: 10px;
 	margin: -10px;
 }
 
 #topline {
-	background-color: #020202;
-	opacity: 0.6;
 	padding: 100px 100px 100px 100px;
 	margin: 100px;
 }
@@ -52,6 +50,7 @@ header {
 h1 {
 	float:left;
 	position: relative;
+	text-transform: uppercase;
 }
 
 h2 {
