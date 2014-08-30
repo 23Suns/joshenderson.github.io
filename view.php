@@ -39,7 +39,6 @@ $text = $post["text"];
 			<p id="text">
 				<?=$text?>
 			</p>
-			<p id="author"><?=$author?></p>
 		</div>
 		<div id="title">
 			<?php
