@@ -38,6 +38,7 @@ header {
 
 #navbar {
 	text-align: center;
+	border: 1px solid #bfbfbf;
 }
 
 #navbar ul {
@@ -78,7 +79,7 @@ header {
 	margin: 100px 100px 0px 100px;
 	border: 1px solid #bfbfbf;
 	text-align: justify;
-	box-shadow: 10px 10px 10px
+	box-shadow: 5px 5px 10px
 }
 
 #text p {
