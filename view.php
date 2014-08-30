@@ -1,4 +1,4 @@
-<?php
+ <?php
 $id = $_GET["id"];
 $conn = mysql_connect("localhost", "root", "root");
 mysql_select_db("blog");
@@ -19,24 +19,29 @@ $text = $post["text"];
 		<title>Viewing post #<?="$id"?></title>
 	</head>
 	<body>
-		<wrap>
 			<header>
-				Lorem Ipsum
-				<div>
+				<div id="sitetitle"> <div id="titletext">Test Site Title</div></div>
+				<div id="navbar">
+					<ul>
+						<li><a>Home</a></li>
+						<li><a>Portfolio</a></li>
+						<li><a>Blog</a></li>
+						<li><a>Features</a></li>
+						<li><a>Contact</a></li>
+					</ul>
 				</div>
 			</header>
-		</wrap>
 		<div id="topline">
-			<h1 id="title" class="content"><?=$title?></h1>
-			<h2 id="author" class="content"><?=$author?></h2>
+			<h1 id="title"><?=$title?></h1>
+			<h2 id="author"><?=$author?></h2>
 		</div>
 		<div id="bottomline">
-			<p id="text" class="content">
+			<p id="text">
 				<?=$text?>
 			</p>
 			<p id="author"><?=$author?></p>
 		</div>
-		<div id="title" class="content">
+		<div id="title">
 			<?php
 			print "| ";
 			while($tag = mysql_fetch_assoc($tagres)){
@@ -45,6 +50,7 @@ $text = $post["text"];
 			}
 			print "\n";
 			?>
+			<h1 id="date"></h1>
 		</div>
 	</body>
 </html>
