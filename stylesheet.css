@@ -80,25 +80,30 @@ header {
 }
 
 #date {
-	color: #ffffff;
+	color: #9d9d9d;
 	text-align: left;
+	font-size: 14px;
 }
 
 #topline {
+	color: 
 	padding: 20px 50px 20px 50px;
-	margin: 50px 55px -50px 55px;
+	margin: 50px 55px -70px 55px;
+	overflow: hidden;
+	text-transform: uppercase;
 }
 
 h1, h2 {
-	text-transform: uppercase;
 	font-size: 25px;
 	color: #484B4C;	
 }
 
 #title {
 	float: left;
+	margin: 0px 0px 0px 45px;
 }
 
 #author {
 	float: right;
+	margin: 0px 45px 0px 0px;
 }
