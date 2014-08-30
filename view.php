@@ -15,7 +15,7 @@ $text = $post["text"];
 
 <html>
 	<head>
-		<link rel="stylesheet" href="http://joshenderson.github.io/stylesheet.css">
+		<link rel="stylesheet" href="./stylesheet.css">
 		<title>Viewing post #<?="$id"?></title>
 	</head>
 	<body>
