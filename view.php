@@ -13,6 +13,7 @@ $date = $post["date"];
 $text = $post["text"];
 ?>
 
+<!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" href="./stylesheet.css">

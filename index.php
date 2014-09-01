@@ -9,6 +9,7 @@ if(!$result){
 }
 ?>
 
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Blog</title>
