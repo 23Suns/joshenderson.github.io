@@ -16,6 +16,9 @@
 
 			Text:
 			<textarea name="text" cols="50" rows="5"></textarea><br>
+
+			Tags:
+			<input type="text" name="tags"><br>
 			<input type="submit" value="Submit">
 		</form>
 	</body>
