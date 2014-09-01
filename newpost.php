@@ -21,6 +21,7 @@
 		</header>
 	<body>
 		<form action="./submit.php" method="post">
+<<<<<<< HEAD
 			<div>
 				Title
 				<br>
@@ -40,6 +41,19 @@
 				<textarea name="text" cols="50" rows="5"></textarea>
 				<br>
 			</div>
+=======
+			Title:
+			<input type="text" name="title" maxlength="100"><br>
+
+			Author:
+			<input type="text" name="author" maxlength="40"><br>
+
+			Text:
+			<textarea name="text" cols="50" rows="5"></textarea><br>
+
+			Tags:
+			<input type="text" name="tags"><br>
+>>>>>>> FETCH_HEAD
 			<input type="submit" value="Submit">
 		</form>
 	</body>
