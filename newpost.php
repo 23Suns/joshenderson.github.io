@@ -21,39 +21,28 @@
 		</header>
 	<body>
 		<form action="./submit.php" method="post">
-<<<<<<< HEAD
-			<div>
-				Title
-				<br>
-				<input type="text" name="title" maxlength="100">
-				<br>
-			</div>
-			<div>
-				Author
-				<br>
-				<input type="text" name="author" maxlength="40">
-				<br>
-			</div>
-			
-			<div>
-				Text
-				<br>
-				<textarea name="text" cols="50" rows="5"></textarea>
-				<br>
-			</div>
-=======
-			Title:
-			<input type="text" name="title" maxlength="100"><br>
-
-			Author:
-			<input type="text" name="author" maxlength="40"><br>
-
-			Text:
-			<textarea name="text" cols="50" rows="5"></textarea><br>
-
+		<div>
+			Title
+			<br>
+			<input type="text" name="title" maxlength="100">
+			<br>
+		</div>
+		<div>
+			Author
+			<br>
+			<input type="text" name="author" maxlength="40">
+			<br>
+		</div>
+		<div>
+			Text
+			<br>
+			<textarea name="text" cols="50" rows="5"></textarea>
+			<br>
+		</div>
+		<div>
 			Tags:
-			<input type="text" name="tags"><br>
->>>>>>> FETCH_HEAD
+			<input type="text" name="tags"><br>		
+		</div>
 			<input type="submit" value="Submit">
 		</form>
 	</body>
