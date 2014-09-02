@@ -1,16 +1,16 @@
  <?php
+include './display_post.php';
 $id = $_GET["id"];
-$conn = mysql_connect("localhost", "root", "root");
-mysql_select_db("blog");
+$conn = mysqli_connect("localhost", "root", "root", 'blog');
 
-$postres = mysql_query("SELECT * FROM posts WHERE id=$id;", $conn);
-$tagres = mysql_query("SELECT tag FROM tags WHERE id=$id;", $conn);
+$postres = mysqli_query($conn, "SELECT * FROM posts WHERE id=$id;");
+$tagres = mysqli_query($conn, "SELECT tag FROM tags WHERE id=$id;");
 
-$post = mysql_fetch_assoc($postres);
-$title = $post["title"];
-$author = $post["author"];
-$date = $post["date"];
-$text = $post["text"];
+$post = mysqli_fetch_assoc($postres);
+//$title = $post["title"];
+//$author = $post["author"];
+//$date = $post["date"];
+//$text = $post["text"];
 ?>
 
 <!DOCTYPE html>
@@ -32,25 +32,6 @@ $text = $post["text"];
 		</div>
 	</header>
 	<body>
-		<div id="topline">
-			<h1 id="title"><?=$title?></h1>
-			<h2 id="author"><?=$author?></h2>
-		</div>
-		<div id="bottomline">
-			<p id="text">
-				<?=$text?>
-			</p>
-		</div>
-		<div id="title">
-			<?php
-			print "| ";
-			while($tag = mysql_fetch_assoc($tagres)){
-				print $tag["tag"];
-				print " | ";
-			}
-			print "\n";
-			?>
-			<h1 id="date"></h1>
-		</div>
+		<?php display_post($post, $tagres); ?>
 	</body>
 </html>

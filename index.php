@@ -1,8 +1,7 @@
 <?php
-$conn = mysql_connect("localhost", "root", "root");
-mysql_select_db("blog");
+$conn = mysqli_connect("localhost", "root", "root", 'blog');
 $query = "SELECT * FROM posts";
-$result = mysql_query($query, $conn);
+$result = mysqli_query($conn, $query);
 
 if(!$result){
 	print "Could not make query";
@@ -18,12 +17,12 @@ if(!$result){
 		<table>
 			<tr>
 				<?php
-				while($row = mysql_fetch_field($result)){ ?>
+				while($row = mysqli_fetch_field($result)){ ?>
 					<td><?="$row->name"?></td>
 				<?php } ?>
 			</tr>
 			<?php
-			while($row = mysql_fetch_assoc($result)){ ?>
+			while($row = mysqli_fetch_assoc($result)){ ?>
 				<tr>
 				<?php
 				foreach($row as $key => $value){ ?>
