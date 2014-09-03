@@ -43,7 +43,7 @@
 			Tags:
 			<input type="text" name="tags"><br>		
 		</div>
-			<input type="submit" value="Submit">
+		<input type="submit" value="Submit">
 		</form>
 	</body>
 </html>
