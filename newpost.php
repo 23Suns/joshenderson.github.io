@@ -36,7 +36,7 @@
 		<div class="input">
 		Text
 			<br>
-				<textarea class="form-control" cols="50" rows="5"></textarea>
+				<textarea class="form-control" cols="50" rows="5" name="text"></textarea>
 			<br>
 		</div>
 		<div class="input">
