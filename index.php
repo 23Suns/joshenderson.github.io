@@ -11,7 +11,7 @@ if(!$result){
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Blog</title>
+		<title>ILK.KIC Blog</title>
 	</head>
 	<body>
 		<table>
