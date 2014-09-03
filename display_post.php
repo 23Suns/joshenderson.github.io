@@ -4,6 +4,7 @@ function display_post($post, $tagres, $full=false){
 	$author = $post['author'];
 	$text = $post['text'];
 	$date = $post['date'];
+	$id = $post['id'];
 	$tags = "| ";
 	while($tag = mysqli_fetch_assoc($tagres)){
 		$tags .= $tag['tag'] . ' | ';
@@ -11,7 +12,7 @@ function display_post($post, $tagres, $full=false){
 	$body = <<<HERE
 	<div id="post">
 		<div id="topline">
-			<h1 id="title">$title</h1>
+			<h1 id="title"><a href="view.php?id=$id">$title</a></h1>
 			<h2 id="author">$author</h2>
 		</div>
 		<div id="bottomline">
