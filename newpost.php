@@ -8,41 +8,45 @@
 		<title>Submit a new post</title>
 	</head>
 	<header>
-			<div id="navbar">
-				<ul>
-					<li><a>Home</a></li>
-					<li><a>Portfolio</a></li>
-					<li><span id="titletext">ILK.KIC BLOG</span></li>
-					<li><a>Categories</a></li>
-					<li><a>Contact</a></li>
-				</ul>
-			</div>
-		</header>
+		<div id="navbar">
+			<ul>
+				<li><a>Home</a></li>
+				<li><a>Portfolio</a></li>
+				<li><span id="titletext">ILK.KIC BLOG</span></li>
+				<li><a>Categories</a></li>
+				<li><a>Contact</a></li>
+			</ul>
+		</div>
+	</header>
 	<body>
+		<div id="inputform">
 		<form action="./submit.php" method="post">
-		<div>
-			Title
+		<div class="input">
+		Title
 			<br>
-			<input type="text" name="title" maxlength="100">
-			<br>
-		</div>
-		<div>
-			Author
-			<br>
-			<input type="text" name="author" maxlength="40">
+			<input class="form-control" type="text" name="title" maxlength="100">
 			<br>
 		</div>
-		<div>
-			Text
+		<div class="input">	
+		Author
 			<br>
-			<textarea name="text" cols="50" rows="5"></textarea>
+			<input class="form-control" class="form-control" type="text" name="author" maxlength="40">
 			<br>
 		</div>
-		<div>
-			Tags:
-			<input type="text" name="tags"><br>		
+		<div class="input">
+		Text
+			<br>
+				<textarea class="form-control" cols="50" rows="5"></textarea>
+			<br>
+		</div>
+		<div class="input">
+		Tags
+			<br>
+			<input class="form-control" type="text" name="tags">
+			<br>
 		</div>
 		<input type="submit" value="Submit">
+		</div>
 		</form>
 	</body>
 </html>
