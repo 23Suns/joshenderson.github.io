@@ -20,12 +20,11 @@ $post = mysqli_fetch_assoc($postres);
 		<title>Viewing post #<?="$id"?></title>
 	</head>
 	<header>
-		<div id="sitetitle"> <div id="titletext">Test Site Title</div></div>
 		<div id="navbar">
 			<ul>
 				<li><a>Home</a></li>
 				<li><a>Portfolio</a></li>
-				<li><a>Blog</a></li>
+				<li><span id="titletext">ILK.KIC BLOG</span></li>
 				<li><a>Categories</a></li>
 				<li><a>Contact</a></li>
 			</ul>
