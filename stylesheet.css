@@ -36,7 +36,6 @@ header {
 
 #titletext {
 	font-size: 4em;
-	display: inline;
 	color: #ffffff;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	vertical-align: middle;
@@ -51,15 +50,14 @@ header {
 }
 
 #navbar ul {
-	font-size: 14px;
-	height: auto;
+	font-size: px;
 	margin: 0px;
 }
 
 #navbar li {
 	display: inline;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
 	text-decoration: none;
 }
 
