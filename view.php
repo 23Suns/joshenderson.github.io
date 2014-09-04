@@ -19,17 +19,7 @@ $post = mysqli_fetch_assoc($postres);
 		<link rel="stylesheet" href="./stylesheet.css">
 		<title>Viewing post #<?="$id"?></title>
 	</head>
-	<header>
-		<div id="navbar">
-			<ul>
-				<li><a>Home</a></li>
-				<li><a>Portfolio</a></li>
-				<li><span id="titletext">ILK.KIC BLOG</span></li>
-				<li><a>Categories</a></li>
-				<li><a>Contact</a></li>
-			</ul>
-		</div>
-	</header>
+	<?php include 'header.php'; ?>
 	<body>
 		<?php display_post($post, $tagres); ?>
 	</body>

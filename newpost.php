@@ -7,17 +7,7 @@
 	<head>
 		<title>Submit a new post</title>
 	</head>
-	<header>
-		<div id="navbar">
-			<ul>
-				<li><a>Home</a></li>
-				<li><a>Portfolio</a></li>
-				<li><span id="titletext">ILK.KIC BLOG</span></li>
-				<li><a>Categories</a></li>
-				<li><a>Contact</a></li>
-			</ul>
-		</div>
-	</header>
+	<?php include 'header.php'; ?>
 	<body>
 		<div id="inputform">
 		<form action="./submit.php" method="post">
