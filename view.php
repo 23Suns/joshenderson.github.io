@@ -21,6 +21,6 @@ $post = mysqli_fetch_assoc($postres);
 	</head>
 	<?php include 'header.php'; ?>
 	<body>
-		<?php display_post($post, $tagres); ?>
+		<?php display_post($post, $tagres, true); ?>
 	</body>
 </html>

@@ -1,11 +1,11 @@
 <?php
 include 'display_post.php';
-$conn = mysqli_connect("localhost", "root", "root", 'blog');
-$query = "SELECT * FROM posts";
+$conn = mysqli_connect('localhost', 'root', 'root', 'blog');
+$query = 'SELECT * FROM posts;';
 $result = mysqli_query($conn, $query);
 
 if(!$result){
-	print "Could not make query";
+	print 'Could not make query';
 }
 ?>
 
