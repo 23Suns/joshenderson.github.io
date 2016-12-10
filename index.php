@@ -1,5 +1,8 @@
 <?php
-include 'display_post.php';
+
+require 'display_post.php';
+require 'escape.php';
+
 $conn = mysqli_connect('localhost', 'root', 'root', 'blog');
 $query = 'SELECT * FROM posts;';
 $result = mysqli_query($conn, $query);
@@ -19,7 +22,7 @@ if(!$result){
 	<body>
 	<?php
 	while($post = mysqli_fetch_assoc($result)){
-		$tagres = mysqli_query($conn, "SELECT * FROM tags WHERE id=$post[id];");
+		$tagres = mysqli_query($conn, 'SELECT * FROM tags WHERE id='.escape($conn, $post[id]).';');
 		display_post($post, $tagres);
 	}
 	?>

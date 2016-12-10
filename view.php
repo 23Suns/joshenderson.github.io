@@ -1,7 +1,8 @@
- <?php
-include './display_post.php';
-$id = $_GET["id"];
+<?php
+require 'display_post.php';
+require 'escape.php';
 $conn = mysqli_connect("localhost", "root", "root", 'blog');
+$id = escape($conn, $_GET["id"]);
 
 $postres = mysqli_query($conn, "SELECT * FROM posts WHERE id=$id;");
 $tagres = mysqli_query($conn, "SELECT tag FROM tags WHERE id=$id;");

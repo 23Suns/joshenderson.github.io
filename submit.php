@@ -1,29 +1,31 @@
 <?php
 
-function escape($conn, $string){
-	return htmlspecialchars(mysqli_real_escape_string($conn, $string));
-}
+require 'escape.php';
 
 if(!isset($_POST['title']) || $_POST['title'] == ''
 || !isset($_POST['author']) || $_POST['author'] == ''
 || !isset($_POST['text']) || $_POST['text'] == ''){
-	echo 'Invalid form data, please go back and try again.';
+	print 'Invalid form data, please go back and try again.';
 	die();
 }
-$tags = $_POST['tags'];
 if(!isset($tags) || $tags == ''){
 	$tags = 'uncatagorized';
 }
 $conn = mysqli_connect('localhost', 'root', 'root', 'blog');
+if(!$conn) {
+	print mysqli_connect_errno();
+	die();
+}
 $title = escape($conn, $_POST['title']);
 $author = escape($conn, $_POST['author']);
 $text = escape($conn, $_POST['text']);
+$tags = escape($conn, $_POST['tags']);
 $res = mysqli_query($conn, "INSERT INTO posts VALUES (null, '$title', '$author', CURDATE(), '$text');");
 if(!$res){
 	echo 'Error inserting post into database';
 	die();
 }
-$tagarr = explode(' ', escape($conn, $tags));
+$tagarr = explode(' ', $tags);
 $countresource = mysqli_query($conn, 'SELECT COUNT(*) FROM posts;');
 $countresult = mysqli_fetch_assoc($countresource);
 $count = $countresult['COUNT(*)'];

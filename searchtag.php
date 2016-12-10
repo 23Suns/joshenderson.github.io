@@ -1,12 +1,9 @@
 <?php
 require 'display_post.php';
 require 'escape.php';
-
 $conn = mysqli_connect('localhost', 'root', 'root', 'blog');
-
 $tag = escape($conn, $_GET['tag']);
 $author = escape($conn, $_GET['author']);
-
 $tagres = mysqli_query($conn, "SELECT * FROM tags WHERE tag='$tag';");
 $postres = mysqli_query($conn, 'SELECT * FROM posts;');
 ?>
