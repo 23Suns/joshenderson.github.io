@@ -3,13 +3,11 @@
 
 <!-- Nested between head and body -->
 <header>
-	<div id="navbar">
-		<ul>
-			<li><a href="./index.php">Home</a></li>
-			<li><a>Portfolio</a></li>
-			<li><span id="titletext">ILK.KIC BLOG</span></li>
-			<li><a>Categories</a></li>
-			<li><a>Contact</a></li>
-		</ul>
-	</div>
+	<div id="titletext">ILK.KIC BLOG</div>
+	<nav>
+		<a href="./index.php">Home</a>
+		<a href="https://github.com/Didact/">Portfolio</a>
+		<a>Categories</a>
+		<a>Contact</a>
+	</nav>
 </header>

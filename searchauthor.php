@@ -4,7 +4,8 @@ require 'display_post.php';
 require 'escape.php';
 
 $conn = mysqli_connect('localhost', 'root', 'root', 'blog');
-$author = escape($conn, $_GET['author']);
+$urlauthor = escape($conn, $_GET['author']);
+$author = urldecode($urlauthor);
 $postres = mysqli_query($conn, "SELECT * FROM posts WHERE author='$author';");
 ?>
 <!DOCTYPE html>

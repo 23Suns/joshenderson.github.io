@@ -13,9 +13,9 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	margin: 0;
-	width: 540px%;
+	/*width: 540px%; wat */
 	min-width: 50%;
 	height: auto;
 	min-height: 100%;
@@ -39,9 +39,11 @@ header {
 	color: #ffffff;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	vertical-align: middle;
+	text-decoration: none;
+	text-align: center;
 }
 
-#navbar {
+nav {
 	text-align: center;
 	border: 1px solid #37393b;
 	border-color: rgba(255,255,255,0.1);
@@ -49,19 +51,19 @@ header {
 	padding-bottom: 30px;
 }
 
-#navbar ul {
-	font-size: px;
+nav ul {
+	font-size: 14px;
 	margin: 0px;
 }
 
-#navbar li {
+nav li {
 	display: inline;
 	padding-left: 80px;
 	padding-right: 80px;
 	text-decoration: none;
 }
 
-#navbar a {
+nav a {
 	color: #9d9d9d;
 	-webkit-transition: color 0.2s;
 	-moz-transition: color 0.2s;
@@ -70,15 +72,15 @@ header {
 	transition: color 0.2s;
 }
 
-#navbar a:hover {
+nav a:hover {
 	color: #ffffff;
 }
 
-#navbar a:on {
+nav a:active {
 	color: #ffffff;
 }
 
-#bottomline {
+.bottomline {
 	background-color: #484B4C;
 	color: #cecece;
 	padding: 20px 50px 20px 50px;
@@ -89,20 +91,24 @@ header {
 	box-shadow: 5px 5px 10px;
 }
 
-#text p {
+.text p {
 	font-weight: 100;
 	font-size: 15px;
 	text-align: justify;
 	position: absolute;
 }
 
-#date {
+.tags {
+	float: left;
+}
+
+.date {
 	color: #9d9d9d;
 	text-align: right;
 	font-size: 14px;
 }
 
-#topline {
+.topline {
 	margin: 50px 55px -80px 55px;
 	overflow: hidden;
 	text-transform: uppercase;
@@ -110,17 +116,21 @@ header {
 	color: #37393b;	
 }
 
-#title {
+a {
+	text-decoration: none;
+}
+
+.title {
 	float: left;
 	margin: 0px 0px 0px 45px;
 }
 
-#author {
+.author {
 	float: right;
 	margin: 0px 45px 0px 0px;
 }
 
-#inputform {
+.inputform {
 	font-size: 15px;
 	color: #5d5d5d;
 	padding-top: 100px;

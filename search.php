@@ -5,15 +5,15 @@ require 'escape.php';
 $conn = mysqli_connect('localhost', 'root', 'root', 'blog');
 
 $tag = escape($conn, $_GET['tag']);
-$author = escape($conn, $_GET['author']);
 
 $tagres = mysqli_query($conn, "SELECT * FROM tags WHERE tag='$tag';");
 $postres = mysqli_query($conn, 'SELECT * FROM posts;');
+
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Searching for posts tagged "<?="$tag"?>"</title>
+		<title>`<?=$tag?>` on ILK.KIC</title>
 		<link rel="stylesheet" href="stylesheet.css">
 	</head>
 	<?php include 'header.php'; ?>
