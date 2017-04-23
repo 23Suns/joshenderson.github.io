@@ -161,3 +161,19 @@ input.form-control {
 	display: table-cell;
 	margin-bottom: 8px;
 }
+
+.readmore {
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: inherit;
+	text-decoration: none;
+	white-space: pre;
+}
+
+.readmore:before {
+	content: "\a\a[";
+}
+
+.readmore:after {
+	content: "]";
+}

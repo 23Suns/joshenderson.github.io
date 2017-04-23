@@ -18,7 +18,7 @@ function display_post($post, $tagres, $full=false){
 	$readmore = "";
 	if(!$full && strpos($text, '<br>')) {
 		$text = substr($text, 0, strpos($text, "<br>"));
-		$readmore = "<br><br><a href=\"view.php?id=$id\">[Read more]</a>";
+		$readmore = "<span class=\"readmore\"><a href=\"view.php?id=$id\">Read more</a></span>";
 	}
 	$body = <<<HERE
 	<div class="post">
