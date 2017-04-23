@@ -27,6 +27,5 @@ if(!$result){
 		display_post($post, $tagres);
 	}
 	?>
-	<div><a href="newpost.php">New Post</a></div>
 	</body>
 </html>

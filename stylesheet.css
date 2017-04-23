@@ -49,27 +49,13 @@ nav {
 	border-color: rgba(255,255,255,0.1);
 	padding-top: 20px;
 	padding-bottom: 30px;
-}
-
-nav ul {
 	font-size: 14px;
-	margin: 0px;
-}
-
-nav li {
-	display: inline;
-	padding-left: 80px;
-	padding-right: 80px;
-	text-decoration: none;
 }
 
 nav a {
 	color: #9d9d9d;
-	-webkit-transition: color 0.2s;
-	-moz-transition: color 0.2s;
-	-ms-transition: color 0.2s;
-	-o-transition: color 0.2s;
-	transition: color 0.2s;
+	padding-left: 80px;
+	padding-right: 80px;
 }
 
 nav a:hover {
@@ -102,12 +88,9 @@ nav a:active {
 	float: left;
 }
 
-.date {
-	color: #9d9d9d;
-	text-align: right;
-	font-size: 14px;
+.tags a:hover {
+	color: white;
 }
-
 .topline {
 	margin: 50px 55px -80px 55px;
 	overflow: hidden;
@@ -116,8 +99,18 @@ nav a:active {
 	color: #37393b;	
 }
 
+.topline a:hover {
+	color: black;
+}
+
 a {
+	-webkit-transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-ms-transition: color 0.2s;
+	-o-transition: color 0.2s;
+	transition: color 0.2s;
 	text-decoration: none;
+	color: inherit;
 }
 
 .title {
@@ -125,10 +118,18 @@ a {
 	margin: 0px 0px 0px 45px;
 }
 
-.author {
+.date {
 	float: right;
 	margin: 0px 45px 0px 0px;
 }
+
+.author {
+	color: #cecece;
+	/*color: #9d9d9d;*/
+	text-align: right;
+	font-size: 16px;
+}
+
 
 .inputform {
 	font-size: 15px;
