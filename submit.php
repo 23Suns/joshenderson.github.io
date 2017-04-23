@@ -20,7 +20,7 @@ $title = escape($conn, $_POST['title']);
 $author = escape($conn, $_POST['author']);
 $text = escape($conn, $_POST['text']);
 $tags = escape($conn, $_POST['tags']);
-$res = mysqli_query($conn, "INSERT INTO posts VALUES (null, '$title', '$author', CURDATE(), '$text');");
+$res = mysqli_query($conn, "INSERT INTO posts VALUES (null, '$title', '$author', NOW(), '$text');");
 if(!$res){
 	echo 'Error inserting post into database';
 	die();
