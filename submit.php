@@ -32,6 +32,6 @@ $count = $countresult['COUNT(*)'];
 foreach($tagarr as $tag){
 	mysqli_query($conn, "INSERT INTO tags VALUES ($count, '$tag');");
 }
-header('Location: newpost.php', TRUE, '303');
+header("Location: ./view.php?id=$count", TRUE, '303');
 die();
 ?>
