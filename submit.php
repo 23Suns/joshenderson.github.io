@@ -20,18 +20,20 @@ $title = escape($conn, $_POST['title']);
 $author = escape($conn, $_POST['author']);
 $text = escape($conn, $_POST['text']);
 $tags = escape($conn, $_POST['tags']);
+
 $res = mysqli_query($conn, "INSERT INTO posts VALUES (null, '$title', '$author', NOW(), '$text');");
 if(!$res){
 	echo 'Error inserting post into database';
 	die();
 }
+
 $tagarr = explode(' ', $tags);
-$countresource = mysqli_query($conn, 'SELECT COUNT(*) FROM posts;');
-$countresult = mysqli_fetch_assoc($countresource);
-$count = $countresult['COUNT(*)'];
+$newid = mysqli_insert_id($conn);
+
 foreach($tagarr as $tag){
-	mysqli_query($conn, "INSERT INTO tags VALUES ($count, '$tag');");
+	mysqli_query($conn, "INSERT INTO tags VALUES ($newid, '$tag');");
 }
-header("Location: ./view.php?id=$count", TRUE, '303');
+
+header("Location: ./view.php?id=$newid", TRUE, '303');
 die();
 ?>
