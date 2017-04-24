@@ -12,17 +12,17 @@
 <form id="inputform" action="./submit.php" method="post">
 	<div class="row">
 	<label for="newpost-title">Title</label>
-	<input id="newpost-title" class="form-control" type="text" name="title" maxlength="100">
+	<input id="newpost-title" class="form-control" type="text" name="title" maxlength="100" required>
 	</div>
 
 	<div class="row">
 	<label for="newpost-author">Author</label>
-	<input id="newpost-author" class="form-control" type="text" name="author" maxlength="40">
+	<input id="newpost-author" class="form-control" type="text" name="author" maxlength="40" required>
 	</div>
 
 	<div class="row">
 	<label for="newpost-text">Text</label>
-	<textarea id="newpost-text" class="form-control" cols="50" rows="20" name="text"></textarea>
+	<textarea id="newpost-text" class="form-control" cols="50" rows="20" name="text" required></textarea>
 	</div>
 
 	<div class="row">
