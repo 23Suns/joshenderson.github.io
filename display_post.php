@@ -5,7 +5,8 @@ function display_post($post, $tagres, $full=false){
 	$encodedauthor = urlencode($author);
 	$text = preg_replace('/'."\n".'/', '<br>', $post['text']);
 	#$text = $post['text'];
-	$date = $post['date'];
+	$date = date_create($post['date']);
+	$datestring = date_format($date, 'F jS, Y');
 	$id = $post['id'];
 	$tags = "| ";
 
@@ -24,7 +25,7 @@ function display_post($post, $tagres, $full=false){
 	<div class="post">
 		<div class="topline">
 			<h1 class="title">$titletext</h1>
-			<h1 class="date">$date</h1>
+			<h1 class="date">$datestring</h1>
 		</div>
 		<div class="bottomline">
 			<p class="text">
