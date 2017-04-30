@@ -206,3 +206,29 @@ input.form-control {
 .contact-value {
 	display: table-cell;
 }
+
+#categories-container {
+	text-align: center;
+}
+
+#categories {
+	padding-top: 100px;
+	margin: auto;
+	display: inline-block;
+}
+
+#categories ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+#categories a {
+	color: #b0b0b0;
+	/*color: #37393b;*/
+	width: 100%;
+	display: inline-block;
+}
+
+#categories a:hover {
+	color: black;
+}
